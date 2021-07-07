@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunities</title>
+    <style>
+    h1{
+        text-align: center;
+    }
+    #register-form{
+        background-color:rgb(97, 175, 185);
+        padding: 24px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input-label{
+        margin: 0;
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+    .input-item{
+        width: 100%;
+    }
+    #terms-check{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav >
+            <label for="logo" class="logo">Child Care Foundation</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="missionAndVision.html" target="_blank">Mission and Vision</a></li>
+                <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="opportunities.html" target="_blank">Apply</a></li>
+                <li><a href="partners.html" target="_blank">Donars</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="margin-top: 40px;">Details Form</h1>
+    <form action="" id="register-form" method="GET">
+        <div>
+           <p class="input-label">Full Name</p>
+        <input class="input-item" type="text" name="fullname" placeholder="Afshan Bhutto" autofocus required>
+        </div>
+        <div>
+            <p class="input-label">Email</p>
+        <input class="input-item" type="email" name="email" placeholder="abc@example.com" required>
+        </div>
+        <div>
+            <p class="input-label">Password</p>
+        <input class="input-item" type="password" name="password" required>
+        </div>
+        <div>
+            <p class="input-label">Confirm password</p>
+        <input class="input-item" type="password" name="confirm-password" required>
+        </div>
+        <div>
+            <p class="input-label">Technology you are good at:</p> 
+            <input class="input-item" list="technologies" name="technology">
+            <datalist id="technologies">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="React">
+                <option value="Redux">
+                <option value="Java">
+                <option value="C++">
+                <option value="Python">
+            </datalist>
+        </div>
+        <div>
+            <p class="input-label">Gender</p>
+        <input type="radio"name="male" value="male">
+        Male</input>
+        <input type="radio"name="female" value="female">
+        Female</input>
+        <input type="radio"name="other" value="other">
+        Other</input>
+        </div>
+        <div>
+            <p class="input-label">Enter your Date of Birth</p>
+            <input class="input-item" type="date" name="date">
+            <!-- <input type="number" name="age" min="18" max="40"> -->
+        </div>
+        <div>
+            Resume: 
+            <input class="input-label" type="file" name="resume">
+        </div>
+        <div>
+            <textarea class="input-item" name="answer" id="" cols="30" rows="7"></textarea>
+        </div>
+        <div>
+            <input id="terms-check" type="checkbox" name="terms-condition" value="accept">
+            I agree to accept terms and conditions
+        </div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <footer>
+        <table class="footer">
+            <tr>
+                <th>Useful Links</th>
+                <th>Child Care Foundation</th>
+                <th>Follow us</th>
+            </tr>
+            <tr>
+                <td>Terms Of Use</td>
+                <td>About Us</td>
+                <td><a href="www.facebook.com">Facebook</a></td>
+            </tr>
+            <tr>
+                <td>Terms Of Use</td>
+                <td>Contact Us</td>
+                <td><a href="www.linkedin.com">LinkedIn</a></td>
+            </tr>
+            <tr>
+                <td>Terms Of Use</td>
+                <td>Donation</td>
+                <td><a href="www.twitter.com">Twitter</a></td>
+            </tr>
+            <tr>
+                
+                <td colspan="3">Copyright © 2021 Child Care Foundation, all rights reserved.</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
